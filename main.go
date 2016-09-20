@@ -9,7 +9,7 @@ import (
 	"os"
 
 	"github.com/Sirupsen/logrus"
-	"github.com/docker/leeroy/jenkins"
+	"github.com/sprucehealth/leeroy/jenkins"
 )
 
 const (
@@ -39,6 +39,7 @@ type Config struct {
 	Builds       []Build        `json:"builds"`
 	User         string         `json:"user"`
 	Pass         string         `json:"pass"`
+	NoDCO        bool           `json:"no_dco"`
 }
 
 // Build describes the paramaters for a build
